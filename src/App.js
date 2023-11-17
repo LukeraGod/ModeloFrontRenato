@@ -7,6 +7,7 @@ import store from "./redux/store";
 import { Provider } from "react-redux";//componente
 import { ToastContainer, toast } from "react-toastify";
 import TelaCadastroCategoria from "./telasCadastro/TelaCadastroCategoria";
+import TelaCadastroFornecedor from "./telasCadastro/TelaCadastroFornecedor";
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/clientes" element={<TelaCadastroCliente />} />
             <Route path="/produtos" element={<TelaCadastroProduto />} />
             <Route path="/categorias" element={<TelaCadastroCategoria />} />
+            <Route path="/fornecedores" element={<TelaCadastroFornecedor />} />
             <Route path="/" element={<TelaMenu />} />
             {
               //... demais telas de cadastro
